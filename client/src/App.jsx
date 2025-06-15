@@ -11,7 +11,7 @@ function App() {
   const fetchMentions = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:3000/mentions?handle=${handle}`);
+      const res = await axios.get(`https://monitoring-tool-oo3r.onrender.com/mentions?handle=${handle}`);
       setMentions(res.data);
       
     } catch (err) {
